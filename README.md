@@ -1,127 +1,108 @@
-Salaries by College Major – Data Analysis
-Project Overview
+# Salaries by College Major – Data Analysis
 
-This project explores how college majors influence salary outcomes. Using a dataset containing salary information for different undergraduate majors, the analysis investigates trends in starting salaries, mid-career salaries, and salary growth potential.
+## Overview
+This project analyzes salary outcomes across different undergraduate college majors. The goal of the analysis is to explore how career choice influences earning potential by examining starting salaries, mid-career salaries, and salary variability.
 
-The goal of this project is to demonstrate data cleaning, exploration, and analysis using Python and Pandas in a Jupyter Notebook.
+Using Python and Pandas in a Jupyter Notebook, the dataset is cleaned, explored, and analyzed to uncover trends in salary distribution among different fields of study.
 
-Objectives
+---
 
-The analysis aims to answer the following questions:
+## Objectives
+The main goals of this project are to:
 
-Which majors have the highest starting salaries?
+- Identify majors with the highest starting salaries
+- Compare mid-career earning potential across majors
+- Analyze salary spread to understand income variability
+- Explore which majors offer more predictable salary outcomes
 
-Which majors have the highest mid-career salaries?
+---
 
-Which majors have the lowest salaries?
+## Dataset
+The dataset contains salary statistics for various undergraduate majors including:
 
-Which degrees offer the highest long-term earning potential?
+- Undergraduate Major
+- Starting Median Salary
+- Mid-Career Median Salary
+- Mid-Career 10th Percentile Salary
+- Mid-Career 90th Percentile Salary
 
-Which majors have the lowest salary risk (small salary spread)?
+These metrics help evaluate both **earning potential and salary risk** across different careers.
 
-Dataset
+---
 
-The dataset contains salary statistics for different undergraduate majors, including:
+## Tools Used
+This project was completed using:
 
-Undergraduate Major
+- Python
+- Pandas
+- Jupyter Notebook
+- Basic Data Analysis Techniques
 
-Starting Median Salary
+---
 
-Mid-Career Median Salary
+## Analysis Process
 
-Mid-Career 10th Percentile Salary
+### 1. Data Loading
+The dataset is imported and inspected to understand its structure and variables.
 
-Mid-Career 90th Percentile Salary
-
-These values help analyze earning potential and salary variability across careers.
-
-Tools and Technologies
-
-The project was completed using:
-
-Python
-
-Pandas
-
-Jupyter Notebook
-
-Key techniques used:
-
-Data loading and inspection
-
-Data cleaning
-
-Handling missing values
-
-Statistical exploration
-
-Sorting and filtering datasets
-
-Calculating salary spread
-
-Key Analysis Steps
-1. Data Loading
-
-The dataset is loaded using Pandas and inspected to understand its structure.
-
-2. Data Cleaning
-
+### 2. Data Cleaning
 Missing values are removed to ensure accurate analysis.
 
-3. Salary Exploration
+### 3. Exploratory Data Analysis
+The dataset is explored to identify:
+- Majors with the highest starting salaries
+- Majors with the highest mid-career salaries
+- Majors with the lowest salaries
 
-The project identifies:
+### 4. Salary Spread Calculation
+A new metric called **Salary Spread** is calculated:
 
-Majors with the highest and lowest starting salaries
+This helps measure the **risk or variability of salaries within each major**.
 
-Majors with the highest and lowest mid-career salaries
+### 5. Risk Analysis
+Majors are sorted by salary spread to determine which fields have **more predictable salary outcomes**.
 
-4. Salary Spread Calculation
+---
 
-A new column called Spread is created:
+## Key Insights
+Some insights explored in this analysis include:
 
-Spread = Mid-Career 90th Percentile Salary − Mid-Career 10th Percentile Salary
+- Certain technical and engineering majors tend to have higher starting salaries.
+- Some majors show a large salary spread, indicating higher income variability.
+- Majors with smaller spreads tend to have more stable salary outcomes.
 
-This measures salary risk or variability within each major.
+---
 
-5. Risk Analysis
-
-Majors are sorted by salary spread to identify low-risk careers where earnings are more predictable.
-
-Example Insights
-
-Some insights explored in the analysis include:
-
-Majors in engineering and technical fields tend to have higher starting salaries.
-
-Some majors have large salary spreads, meaning earnings vary widely.
-
-Other majors show lower spreads, indicating more consistent salary outcomes.
-
-Project Structure
-Salaries-by-College-Major
+## Project Structure
+salaries-by-college-major-analysis
 │
-├── Salaries_by_college_major.ipynb
-├── salaries_by_college_major.csv
+├── data
+│ └── salaries_by_college_major.csv
+│
+├── notebooks
+│ └── salaries_by_college_major.ipynb
+│
 └── README.md
-How to Run the Project
 
-Clone the repository
 
-Open the notebook in Jupyter Notebook or Jupyter Lab
+---
 
-Run the cells step by step to reproduce the analysis
+## Skills Demonstrated
+This project demonstrates the following data analysis skills:
 
-Skills Demonstrated
+- Data cleaning
+- Exploratory data analysis
+- Data manipulation with Pandas
+- Analytical thinking
+- Working with Jupyter Notebooks
 
-This project demonstrates:
+---
 
-Data cleaning
+## Future Improvements
+Possible extensions of this project include:
 
-Exploratory data analysis
+- Creating data visualizations for salary comparisons
+- Building an interactive dashboard
+- Conducting deeper statistical analysis on salary trends
 
-Data manipulation with Pandas
-
-Analytical thinking
-
-Python data analysis workflow
+---
