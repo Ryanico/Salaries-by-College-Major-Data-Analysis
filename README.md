@@ -1,5 +1,6 @@
 # Salaries by College Major – Data Analysis
 
+
 ## Overview
 This project analyzes salary outcomes across different undergraduate college majors. The goal of the analysis is to explore how career choice influences earning potential by examining starting salaries, mid-career salaries, and salary variability.
 
